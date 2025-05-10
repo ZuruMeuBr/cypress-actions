@@ -4,15 +4,13 @@ on: [push]
 
 jobs:
   cypress-electron-tests:
-    runs-on: unbutu-latest
+    runs-on: ubuntu-latest  # <- corrigido aqui
     steps:
-       - name: Get code
-         uses: actions/checkout@v4.2.2
+      - name: Get code
+        uses: actions/checkout@v4.2.2
 
-       - name: Install dependencies
-         run: yarn install
+      - name: Install dependencies
+        run: yarn install
 
-       - name: Run E2E tests
-         run: yarn cypress
-          
-       
+      - name: Run E2E tests
+        run: yarn cypress
