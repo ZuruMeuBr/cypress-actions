@@ -23,6 +23,6 @@ jobs:
         group: UI Electron
         spec: ${{ github.events.inputs.spec }}
       env:
-        CYPRESS RECORD_KEY: 786890a0-2632-41aa-a667-91fe68f04d02
+        CYPRESS_RECORD_KEY: 786890a0-2632-41aa-a667-91fe68f04d02
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
